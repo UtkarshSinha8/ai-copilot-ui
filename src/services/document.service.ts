@@ -1,5 +1,5 @@
 import api from './api';
-import type { Document, UploadResponse, DocumentsResponse } from '../types/document.types';
+import type { Document, UploadResponse } from '../types/document.types';
 
 export const getDocuments = async (): Promise<Document[]> => {
   const response = await api.get("/documents");
