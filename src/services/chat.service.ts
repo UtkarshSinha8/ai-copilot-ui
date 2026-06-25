@@ -39,7 +39,7 @@ export const chatService = {
       const token = localStorage.getItem("accessToken");
 
       const response = await fetch(
-        `http://localhost:3000/api/chats/${chatId}/messages`,
+  `${import.meta.env.VITE_API_URL}/chats/${chatId}/messages`,
         {
           method: "POST",
           headers: {
