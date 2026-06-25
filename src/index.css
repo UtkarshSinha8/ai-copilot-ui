@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-black m-0 overflow-y-auto;
+  }
+}
